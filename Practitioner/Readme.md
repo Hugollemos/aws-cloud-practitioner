@@ -9,7 +9,7 @@ Minhas anotações tiradas do curso da **[Escola da nuvem](https://www.escoladan
 
 * [Assuntos](#assunto)
     - [Pesos](#Pesos)
-    - [O que é a computação em nuvem ? ](#O_que_é_a_computação_em_nuvem)
+    - [O que é a computação em nuvem ? ](#nuvem)
     - [vantagens da computação da nuvem](#vantagens)
     - [Computação na nuvem](#nuvem)
     - [Infraestrutura global e Confiabilidade](#infra)
@@ -19,7 +19,7 @@ Minhas anotações tiradas do curso da **[Escola da nuvem](https://www.escoladan
     - [Monitoramento e análise](#Monitoramento)
     - [Definição de preços e suporte](#preco)
     - [Migração e inovação](#migracao)
-* [links](#links)
+
 
 <hr>
 <div id="Pesos"></div>
@@ -37,7 +37,7 @@ TOTAL | 100%
 )** 
 <hr>
 
-<div id="O_que_é_a_computação_em_nuvem"></div>
+<div id="nuvem"></div>
 
 ## 1. O que é a computação em nuvem ? ☁️ ☁️ ☁️ 
 
@@ -50,7 +50,7 @@ TOTAL | 100%
 
 <div id="vantagens"></div>
 
-# As 6 vantagens da computação da nuvem na visão da AWS. 🥇
+# 1.1 As 6 vantagens da computação da nuvem na visão da AWS. 🥇
 
 # Save money
 "Pare de gastar recursos financeiros na manutenção da infraestrutura e tenha mais foco nos clientes."
@@ -74,30 +74,31 @@ TOTAL | 100%
 )** 
 <hr>
 
-# Tipos de clouds
+# 1.2 Tipos de clouds
 ## Temos 3 tipos de clouds!
 
 * IAAS
 Infrastructure as a service (infraestrutura como serviço). Exemplo AWS EC2 a onde usamos o hardware da aws para montar servidores virtuais, utilizando rede, armazenamento e processamento. 
 
 * PAAS
-plataform as a service (plataforma como serviço), sua organização não precisa gerenciar a infraestrutura subjacente (geralmente hardware e sistemas operacionais), e você pode focar na implantação e no gerenciamento de suas aplicações.
+plataform as a service (plataforma como serviço), Não é preciso gerenciar a infraestrutura subjacente (geralmente hardware e sistemas operacionais), e você pode focar na implantação e no gerenciamento de suas aplicações.
 
 * SAAS
 SaaS – software as a service (software como serviço). Quando utilizamos o software: Amazon CloudFront, Amazon Detective,Amazon DocumentDB etc.
 
-**[REFERENCIA](https://aws.amazon.com/pt/types-of-cloud-computing/
-)** 
 
 <p align="center">
   <a><img src="../img/plataforma.png"></a>
 </p>
 
+**[REFERENCIA](https://aws.amazon.com/pt/types-of-cloud-computing/
+)**
+
 <div id="nuvem"></div>
 
 # 2. COMPUTAÇÃO NA NUVEM 🖥 ☁️
 
-O Amazon EC2 é um serviço que disponibiliza uma capacidade computacional segura, representado por uma instancia redimensionável na Nuvem.
+"O Amazon EC2 é um serviço que disponibiliza uma capacidade computacional segura, representado por uma instancia redimensionável na Nuvem."
 
 ### CARACTERÍSTICAS
 * amazon EC2 Elastic Compute Cloud
@@ -110,6 +111,8 @@ O Amazon EC2 é um serviço que disponibiliza uma capacidade computacional segur
 * Ambiente operacional Windows, MacOS e Linux
 * Cobrança por hora ou segundo (mínimo de  60 segundos)
 
+**[REFERENCIA](https://aws.amazon.com/pt/ec2/
+)**
 # Tipos de instancia
 
 FAMÍLIA | OTIMIZADO | IDEAL PARA
@@ -120,20 +123,25 @@ FAMÍLIA | OTIMIZADO | IDEAL PARA
 `I, D, H`      | Processamento | Executar funçoes, como cálculos de números de ponto flutuante, processamento de gráficos.
 `I, D, H`      | Armazenamento | Cargas de trabalho qeu requerem uso intensivo de disco (IOPS)
 
+**[REFERENCIA](https://aws.amazon.com/pt/ec2/instance-types/)**
 
 ## ✨ Amazon EC2 Launch Types
 
-Launch | Especifico | Preço | Útil 
+Launch | Específico | Preço | Útil 
 ---------|----------|---------|---------
-SOB DEMANDA | Cobrança o que usar (por hora OU por segundo); Sem compromisso de uso (anos); Sem pagamento adiantado; Pode aumentar ou diminuir a capacidade computacional. | Alto custo se usado por longo prazo | Cargas de trabalho de curtoprazo, validar hipóteses, com picode utilização previsível, testar e experimentar um ambiente.
-INSTANCIAS RESERVADAS | Aplicações que exigem capacidade reservadacomprometimento de uso da instancia por um período de 01 ou 03 anos |possui pagamento adiantado; Até 75% desconto comparação instancias por demanda | Ambiente de produção que foi testado e não será modificado, aplicação que precisa ter estado constante; Excelente para banco de dados.
-HOST DEDICADO | Hardware dedicado; Servidor físico EC2 exclusivo para você ;Cumprir requisitos de conformidade ;Visibilidade de soquetes, núcleos. IDs de host ;Comprometimento por um período de 03 anos;Pode ser comprado sob demanda de horas | se optar por reserva, até 70% desconto em comparação com instancias por demanda | Vincular licenças de software como Windows Server, AWS Server e SUSE Linux Enterprise Server.
+SOB DEMANDA | Cobrança sobre o que usar (por hora OU por segundo). Sem compromisso de uso (anos). Sem pagamento adiantado. Pode aumentar ou diminuir a capacidade computacional. | Alto custo se usado por longo prazo | Cargas de trabalho de curtoprazo, validar hipóteses, com pico de utilização previsível, testar e experimentar um ambiente.
+INSTANCIAS RESERVADAS | Aplicações que exigem capacidade reservada comprometimento de uso da instancia por um período de 01 ou 03 anos. | possui pagamento adiantado. Até 75% desconto comparação instancias por demanda | Ambiente de produção que foi testado e não será modificado, aplicação que precisa ter estado constante; Excelente para banco de dados.
+HOST DEDICADO | Hardware dedicado. Servidor físico EC2 exclusivo para você. Cumprir requisitos de conformidade. Visibilidade de soquetes, núcleos. IDs de host. Comprometimento por um período de 03 anos. Pode ser comprado sob demanda de horas | se optar por reserva, até 70% desconto em comparação com instancias por demanda | Vincular licenças de software como Windows Server, AWS Server e SUSE Linux Enterprise Server.
 INSTANCIA DEDICADA | Hardware dedicado Pode compartilhar o hardware com outras instancias, na mesma conta. Não tem controle sobre o posicionamento da instancia (você só pode movimentar hardware se interromper e reiniciar); Comprometimento por um período de 03 anos
-INSTANCIAS SPOT | são terminadas quando o preço do spot, é maior do que o preço que você estabeleceu para pagar; terminate =(preço spot da AWS > seu preço) | Até 90% desconto comparação instancias por demanda | Quando você tem urgência de grande capacidade computacional, workloads que podem parar e serem iniciados novamente, trabalhos em iote, análise de dados, processamento de imagens.
+INSTANCIAS SPOT | são terminadas quando o preço do spot, é maior do que o preço que você estabeleceu para pagar. terminate =(preço spot da AWS > seu preço) | Até 90% desconto comparação instancias por demanda | Quando você tem urgência de grande capacidade computacional, workloads que podem parar e serem iniciados novamente, trabalhos em iote, análise de dados, processamento de imagens.
+
+## Savings Plans do Amazon EC2
+permite reduzir os custos de computação ao haver o compromisso com uma quantidade consistente de uso de computação por um período de um ou três anos. Esse compromisso resulta em economias de até 72% em relação aos custos de instâncias sob demanda.
+<hr>
 
 ## Amazon EC2 Auto Scaling
 
-O Amazon EC2 Auto Scaling permite que você adicione ou remova automaticamente instâncias do Amazon EC2 em resposta à alteração da demanda do aplicativo.
+"O Amazon EC2 Auto Scaling permite que você adicione ou remova automaticamente instâncias do Amazon EC2 em resposta à alteração da demanda do aplicativo."
 
 - No Amazon EC2 Auto Scaling, há duas abordagens disponíveis: scaling dinâmico e scaling preditivo.
 
@@ -144,29 +152,40 @@ O Amazon EC2 Auto Scaling permite que você adicione ou remova automaticamente i
   <a><img src="../img/scale.png"></a>
 </p>
 
-## escalabilidade
+**[REFERENCIA](https://aws.amazon.com/pt/ec2/autoscaling/)**
+## Escalabilidade
 almenta os recursos computacionais como: RAM,CPU etc.
 
-## elasticidade 
+## Elasticidade 
 almenta os números de intancias(máquinas)
 
-obs:
+Serviços Elásticos: Amazon EC2, Elastic Load Balacing, AWS Elastic Beanstalk, Amazon Elastic Cache
+
+OBS:
 * Definir uma quantidade mínima, desejável e máxima de instancias
 * Scale out (aumentar com as demandas) e Scale in (diminuir quando a demanda deixa de ocorrer)
 * Auto Scaling Group é gratuito, voce paga apenas pelas instancias que estao sendo executadas
 
+<hr>
+
 ## Elastic Load Balancing
-O Elastic Load Balancing é o serviço AWS que distribui automaticamente o tráfego de entrada de aplicativos entre vários recursos, como instâncias do Amazon EC2.
+"O Elastic Load Balancing é o serviço AWS que distribui automaticamente o tráfego de entrada de aplicativos entre vários recursos, como instâncias do Amazon EC2."
+
+**[REFERENCIA](https://aws.amazon.com/pt/elasticloadbalancing/)**
 
 ## Amazon Simple Notification Service (Amazon SNS)
-O Amazon Simple Notification Service (Amazon SNS) é um serviço de publicação/assinatura.
+"O Amazon Simple Notification Service (Amazon SNS) é um serviço de publicação/assinatura."
+
+**[REFERENCIA](https://aws.amazon.com/pt/sns/)**
 
 ## Amazon Simple Queue Service (Amazon SQS)
-O Amazon Simple Queue Service (Amazon SQS) é um serviço de enfileiramento de mensagens. 
+"O Amazon Simple Queue Service (Amazon SQS) é um serviço de enfileiramento de mensagens que permite o desacoplamento e a escalabilidade de microsserviços, sistemas distribuídos e aplicações sem servidor." 
+
+**[REFERENCIA](https://aws.amazon.com/pt/sqs/)**
 
 ## AWS Lambda
-O AWS Lambda é um serviço que permite a execução de códigos sem a necessidade de provisionar ou gerenciar servidores.
-Permite que voce execute códigos sem provisionar ou gerenciar servidores, pagando apenas pelo número de solicitações e pelo tempo de computação que voce utilizar.
+"O AWS Lambda é um serviço que permite a execução de códigos sem a necessidade de provisionar ou gerenciar servidores.
+Permite que voce execute códigos sem provisionar ou gerenciar servidores, pagando apenas pelo número de solicitações e pelo tempo de computação que voce utilizar."
 
 OBS: 
 * serviço serveless e gerenciado pela AWS
@@ -174,29 +193,34 @@ OBS:
 * voce pode otimizar o tempo de execuçao e o tamanho de memoria
 * cobrança por númeo de solicitacoes de duas funcoes e pela duracao por cada milissegundo que leva para que seu codigo seja executado
 
+https://aws.amazon.com/pt/lambda/
 ## Amazon Elastic Container Service (Amazon ECS)
-É um sistema de gerenciamento de contêineres altamente dimensionável e de alto desempenho que permite executar e dimensionar aplicativos em contêineres na AWS.
+"É um sistema de gerenciamento de contêineres altamente dimensionável e de alto desempenho que permite executar e dimensionar aplicativos em contêineres na AWS."
+https://aws.amazon.com/pt/ecs/
 ## Amazon Elastic Kubernetes Service (Amazon EKS)
-É um serviço totalmente gerenciado que você pode usar para executar o Kubernetes na AWS.
-
+"É um serviço totalmente gerenciado que você pode usar para executar o Kubernetes na AWS."
+https://aws.amazon.com/pt/eks/
 ## AWS Fargate
-O AWS Fargate é um mecanismo de computação sem servidor para contêineres. Ele funciona com o Amazon ECS e o Amazon EKS.
-Com o AWS Fargate, você não precisa provisionar ou gerenciar servidores. 
-
+"O AWS Fargate é um mecanismo de computação sem servidor para contêineres. Ele funciona com o Amazon ECS e o Amazon EKS.
+Com o AWS Fargate, você não precisa provisionar ou gerenciar servidores." 
+https://aws.amazon.com/pt/fargate/
 <div id="infra"></div>
 
 # 3. INFRAESTRUTURA GLOBAL E CONFIABILIDADE 🛰 🏭
 
-## Uma regiao é a disponibilizacao de uma colecao de recursos AWS em uma localizacao geografica, sendo ele composto por um conjunto de zonas de disponibilidade
-região: é um conjunto de data centers em uma localização geográfica.
+Uma região é a disponibilização de uma coleção de recursos AWS em uma localização geográfica, sendo ele composto por um conjunto de zonas de disponibilidade(um conjunto de data centers em uma localização geográfica.)
 
 ZONA DE DISPONIBILIDADE: Uma zona de disponibilidade é um conjunto de datacenters que estão na mesma REGIÃO, porém separados por uma distancia significativa, atuando de forma independente em caso de falha de uma zona.
 
-pontos de presença é uma infraestrutura de servidores, localizado proximno de uma ZD, que armazena os dados mais solicitados no cahce, para entregar com menor latencia uma requisicao de consulta
-sao tulizados como cache de dados para distribuicao de conteudo
+Pontos de presença, Edge locations ou local de borda é: uma infraestrutura de servidores, localizado proximno de uma ZD, que armazena os dados mais solicitados no cache, para entregar com menor latência uma requisição de consulta.
+
+OBS:
+são utilizados como cache de dados para distribuição de conteúdo.
+
+https://docs.aws.amazon.com/pt_br/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvailabilityZones.html
 
 ## AWS Elastic Beanstalk
-Você fornece definições de *código* e configuração, e o Elastic Beanstalk implanta os recursos necessários para executar as seguintes tarefas:
+"Você fornece definições de *código* e configuração, e o Elastic Beanstalk implanta os recursos necessários para executar as seguintes tarefas:"
 
 * Balancear carga
 * Dimensionar de forma automática
@@ -206,35 +230,42 @@ Você fornece definições de *código* e configuração, e o Elastic Beanstalk 
 * Alta disponibilidade (Multi-az)
 * Upload código arquivo <512Mb ou Upload via URL Buckeat S3
 * Plataforma como Serviço (PaaS)
-
+https://aws.amazon.com/pt/elasticbeanstalk/
 ## AWS CloudFormation
-Você pode considerar sua infraestrutura como código. 
-crie frequentemente a infraestrutura e os aplicativos sem precisar executar ações manuais ou criar scripts personalizados. 
-
+"Você pode considerar sua infraestrutura como código. 
+crie frequentemente a infraestrutura e os aplicativos sem precisar executar ações manuais ou criar scripts personalizados." 
+https://aws.amazon.com/pt/cloudformation/
 <div id="redes"></div>
 
 # 4. REDES 📡
 
 ## AMAZON VPC
-O Amazon VPC é uma sessão isolada logicamente na nuvem AWS, que permite customizar uma rede virtual e executar recursos, em uma ambiente com controle total
-
+"O Amazon VPC é uma sessão isolada logicamente na nuvem AWS, que permite customizar uma rede virtual e executar recursos, em uma ambiente com controle total"
+https://aws.amazon.com/pt/vpc/
 ## AWS Direct Connect
-O AWS Direct Connect é um serviço que permite estabelecer uma conexão privada dedicada entre seu data center e uma VPC.
+"O AWS Direct Connect é um serviço que permite estabelecer uma conexão privada dedicada entre seu data center e uma VPC."
 
 A conexão privada que o AWS Direct Connect fornece ajuda você a reduzir os custos de rede e a aumentar a quantidade de largura de banda que pode trafegar pela sua rede.
+https://aws.amazon.com/pt/directconnect/
+<hr>
 
 ## Gateway da internet X Gateway privado virtual
 
-Para permitir que o tráfego público da internet acesse sua VPC, é preciso anexar um gateway da internet à VPC.
+Para permitir que o tráfego público da internet acesse sua VPC, é preciso anexar um **gateway da internet** à VPC.
+https://docs.aws.amazon.com/pt_br/vpc/latest/userguide/VPC_Internet_Gateway.html
 
-Para acessar recursos privados em uma VPC, você pode usar um gateway privado virtual. 
+Para acessar recursos privados em uma VPC, você pode usar um **gateway privado virtual**. 
+https://docs.aws.amazon.com/pt_br/directconnect/latest/UserGuide/virtualgateways.html
 
+OBS:
 Uma sub-rede é uma seção de uma VPC na qual você pode agrupar recursos com base em necessidades operacionais ou de segurança. As sub-redes podem ser públicas ou privadas. 
 
 ## Lista de controle de acesso (ACL) de rede.
-Uma lista de controle de acesso (ACL) de rede é um firewall virtual que controla o tráfego de entrada e saída no nível de sub-rede.
+"Uma lista de controle de acesso (ACL) de rede é um firewall virtual que controla o tráfego de entrada e saída no nível de sub-rede."
 
-Uma lista de controle de acesso (ACL) de rede permite ou não determinado tráfego de entrada ou de saída no nível da sub-rede.
+https://docs.aws.amazon.com/pt_br/AmazonS3/latest/userguide/acl-overview.html
+
+"Uma lista de controle de acesso (ACL) de rede permite ou não determinado tráfego de entrada ou de saída no nível da sub-rede."
 
 # Filtragem de pacotes stateless
 As ACLs de rede executam a filtragem de pacotes stateless. Elas não se lembram de nada e verificam os pacotes que atravessam a fronteira da sub-rede em todos os sentidos: entrada e saída.
@@ -248,9 +279,10 @@ Um grupo de segurança é um firewall virtual que controla o tráfego de entrada
 
 Por padrão, um grupo de segurança nega todo o tráfego de entrada e permite todo o tráfego de saída. 
 
-## Amazon Route 53
+https://docs.aws.amazon.com/pt_br/AWSEC2/latest/UserGuide/ec2-security-groups.html
 
-é um serviço web de DNS. Oferece aos desenvolvedores e empresas uma maneira confiável de rotear os usuários finais para aplicativos da internet hospedados na AWS.
+## Amazon Route 53
+"é um serviço web de DNS. Oferece aos desenvolvedores e empresas uma maneira confiável de rotear os usuários finais para aplicativos da internet hospedados na AWS."
 
 ### REGISTROS COMUNS
 
@@ -262,17 +294,22 @@ search.google.com | www.google.com | CNAME | Hostname para Hostname
 exemplo | Recurso AWS | ALIAS | ELB, CloudFront, S3, DRS...
 
 <div id="banco"></div>
+https://aws.amazon.com/pt/route53/
 
 # 5. Armazenamento e Bancos de Dados 📊 🗂 💻
 
 ## Amazon Elastic Block Store (Amazon EBS)
-é um serviço que fornece volumes de armazenamento a nível de bloco que você pode usar com instâncias do Amazon EC2. Se você interromper ou encerrar uma instância do Amazon EC2, todos os dados no volume do EBS anexo permanecerão disponíveis.
+"é um serviço que fornece volumes de armazenamento a nível de bloco que você pode usar com instâncias do Amazon EC2. Se você interromper ou encerrar uma instância do Amazon EC2, todos os dados no volume do EBS anexo permanecerão disponíveis."
+
+https://aws.amazon.com/pt/ebs/
 
 ## Snapshots do Amazon EBS
-Um snapshot do EBS é um backup incremental. Isso significa que o primeiro backup de um volume copia todos os dados.
+"Um snapshot do EBS é um backup incremental. Isso significa que o primeiro backup de um volume copia todos os dados."
+
+https://docs.aws.amazon.com/pt_br/AWSEC2/latest/UserGuide/EBSSnapshots.html
 
 ## Amazon Simple Storage Service (Amazon S3)
-É um serviço gerenciado de armazenamento e recuperação  de objetos, respondendo com escalabilidade, disponibilidade, segurança e performance.
+"É um serviço gerenciado de armazenamento e recuperação  de objetos, respondendo com escalabilidade, disponibilidade, segurança e performance."
 * O Amazon S3 oferece espaço de armazenamento ilimitado. O tamanho máximo de arquivo para um objeto no Amazon S3 é de 5 TB.
 
 ## Classes de armazenamento do Amazon S3
@@ -313,24 +350,28 @@ O S3 Glacier é uma categoria de armazenamento de baixo custo, ideal para o arqu
 
 Ao decidir entre o Amazon S3 Glacier e o Amazon S3 Glacier Deep Archive, considere a prontidão com que você precisa recuperar objetos arquivados. É possível recuperar objetos armazenados na categoria de armazenamento S3 Glacier de alguns minutos a algumas horas. Em comparação, é possível recuperar objetos armazenados na categoria de armazenamento S3 Glacier Deep Archive em até 12 horas.
 
+https://aws.amazon.com/pt/s3/
 ---
 ## Amazon Elastic File System (Amazon EFS)
 
-é um sistema de arquivos escalável usado com os serviços de nuvem AWS e recursos locais. À medida que você adiciona e remove arquivos, o Amazon EFS expande e retrai automaticamente. Ele pode dimensionar sob demanda para petabytes sem interromper os aplicativos. 
-
+"é um sistema de arquivos escalável usado com os serviços de nuvem AWS e recursos locais. À medida que você adiciona e remove arquivos, o Amazon EFS expande e retrai automaticamente. Ele pode dimensionar sob demanda para petabytes sem interromper os aplicativos." 
+https://aws.amazon.com/pt/efs/
 ## Amazon Relational Database Service (Amazon RDS)
 
-O Amazon Relational Database Service (Amazon RDS) é um serviço que permite executar bancos de dados relacionais na nuvem AWS.
+"O Amazon Relational Database Service (Amazon RDS) é um serviço que permite executar bancos de dados relacionais na nuvem AWS."
 * alta disponibilidade automática, recuperação fornecida
 * Cliente é propriétario dos dados
 * Cliente é propriétario dos schema
 * Cliente controla a rede
+
+https://aws.amazon.com/pt/rds/
 ---
 ## Amazon Aurora
-
-O Amazon Aurora é um banco de dados relacional de nível empresarial.
+"O Amazon Aurora é um banco de dados relacional de nível empresarial."
 
 Considere o Amazon Aurora se suas cargas de trabalho exigem alta disponibilidade. Ele replica seis cópias de seus dados em três Zonas de Disponibilidade e faz backup contínuo de seus dados para o Amazon S3.
+
+https://aws.amazon.com/pt/rds/aurora/
 ---
 ## Amazon DynamoDB
 *  banco de dados não relacional
@@ -343,40 +384,55 @@ Você também não precisa instalar, manter ou operar o software.\
 * Potencial de tamanho de PB
 * Acesso a API granular
 
+https://aws.amazon.com/pt/dynamodb/
 ## Amazon RedShift
-O Amazon Redshift é serviço de data warehouse que você pode usar para análise de big data. Ele oferece a capacidade de coletar dados de muitas fontes além de ajudar a entender relações e tendências em todos os seus dados.
+"O Amazon Redshift é serviço de data warehouse que você pode usar para análise de big data. Ele oferece a capacidade de coletar dados de muitas fontes além de ajudar a entender relações e tendências em todos os seus dados."
 
+https://aws.amazon.com/pt/redshift/
 ## AWS Database Migration Service (AWS DMS)
-O AWS Database Migration Service (AWS DMS) permite migrar bancos de dados relacionais e não relacionais e outros tipos de armazenamentos de dados.
+"O AWS Database Migration Service (AWS DMS) permite migrar bancos de dados relacionais e não relacionais e outros tipos de armazenamentos de dados."
 
 * O banco de dados de origem permanece totalmente operacional durante a migração
 * Minimizando o tempo de inatividade das aplicações que dependem desse banco de dados.
 * Os bancos de dados de origem e edestino não precisma ser do mesmo tipo.
-
+https://aws.amazon.com/pt/dms/
 ## Amazon DocumentDB
-O Amazon DocumentDB é um serviço de banco de dados de documentos compatível com cargas de trabalho do MongoDB. (MongoDB é um programa de banco de dados de documentos.)
+"O Amazon DocumentDB é um serviço de banco de dados de documentos compatível com cargas de trabalho do MongoDB. (MongoDB é um programa de banco de dados de documentos.)"
+https://aws.amazon.com/pt/documentdb/
 ## Amazon Neptune
 O Amazon Neptune é um serviço de banco de dados de grafo.
 
 Você pode usar o Amazon Neptune para criar e executar aplicativos que funcionam com conjuntos de dados altamente conectados, como mecanismos de recomendação, detecção de fraudes e gráficos de conhecimento.
+
+https://aws.amazon.com/pt/neptune/
+
 ## Amazon Quantum Ledger DAtabase (Amazon QLDB)
-O Amazon Quantum Ledger Database (Amazon QLDB) é um serviço de banco de dados ledger.
+"O Amazon Quantum Ledger Database (Amazon QLDB) é um serviço de banco de dados ledger.
 
 Você pode usar o Amazon QLDB para revisar um histórico completo de todas as alterações feitas nos dados do aplicativo.
+
+https://aws.amazon.com/pt/qldb/
+
 ## Amazon Managed Blockchain
 O Amazon Managed Blockchain é um serviço para criar e gerenciar redes de blockchain com estruturas de código aberto.
 
 
 O Blockchain é um sistema de registro distribuído que permite que várias partes executem transações e compartilhem dados sem uma autoridade central.
+https://aws.amazon.com/pt/managed-blockchain/
 ## Amazon ElastiCache
 O Amazon ElastiCache é um serviço que adiciona camadas de cache sobre seus bancos de dados para ajudar a melhorar os tempos de leitura de solicitações comuns.
 
 
 Ele é compatível com dois tipos de armazenamentos de dados: Redis e Memcached.
+
+
+https://aws.amazon.com/pt/elasticache/
 ## Amazon DynamoDB Accelecerator
 O Amazon DynamoDB Accelerator (DAX) é um cache em memória para o DynamoDB.
 
 Ele ajuda a melhorar os tempos de resposta de milissegundos para microssegundos.
+
+https://aws.amazon.com/pt/dynamodb/?trk=3e4c2258-4f21-4854-9de7-2f6da2ef0989&sc_channel=ps&sc_campaign=acquisition&sc_medium=ACQ-P|PS-GO|Brand|Desktop|SU|Database|DynamoDB|BR|PT|Text&s_kwcid=AL!4422!3!589951433444!p!!g!!amazon%20dynamodb&ef_id=Cj0KCQjwgO2XBhCaARIsANrW2X3_388j9F7R6hVYL8JWnkflRyILXRa94a-OqXgAIM0ntTREPmyHR2QaAq3NEALw_wcB:G:s&s_kwcid=AL!4422!3!589951433444!p!!g!!amazon%20dynamodb
 
 <div id="seguranca"></div>
 
@@ -395,13 +451,18 @@ Uma função do IAM é uma identidade que você pode assumir para obter acesso t
 
 
 ## Uma função do IAM é uma identidade que você pode assumir para obter acesso temporário a permissões.
+https://aws.amazon.com/pt/iam/
 
 ## AWS Organizations
 * consolidar e gerenciar múltiplas contas AWS em um local central.
 *No AWS Organizations, você pode agrupar contas em unidades organizacionais (UO) para facilitar o gerenciamento de contas com requisitos de negócios ou segurança semelhantes.
+
+https://aws.amazon.com/pt/organizations/
+
 ## políticas de controle de serviço (SCPs).
 
 As SCPs permitem que você coloque restrições nos serviços AWS, recursos e ações individuais de API que os usuários e funções em cada conta podem acessar.
+https://docs.aws.amazon.com/pt_br/organizations/latest/userguide/orgs_manage_policies_scps.html
 
 ## AWS Artifact
 
@@ -413,12 +474,12 @@ No AWS Artifact Agreements, você pode revisar, aceitar e gerenciar contratos pa
 
 -AWS Artifact Reports
 O AWS Artifact Reports fornece relatórios de conformidade por auditores terceirizados. Esses auditores testaram e verificaram se a AWS está em conformidade com diversas normas e regulamentações de segurança globais, , regionais e específicas do setor. 
-
+https://aws.amazon.com/pt/artifact/
 ## Ataques de negação de serviço
 
 ## AWS Shield
 O AWS Shield é um serviço que protege aplicativos contra ataques DDoS. O AWS Shield oferece dois níveis de proteção: Standard e Advanced.
-
+https://aws.amazon.com/pt/shield/
 ## AWS Shield Standard
 O AWS Shield Standard protege automaticamente todos os clientes AWS sem nenhum custo. Ele protege seus recursos AWS contra os tipos de ataques DDoS mais comuns e frequentes.
 
@@ -434,12 +495,12 @@ permite que você execute operações de criptografia pelo uso de chaves de crip
 
 ## Amazon Inspector
 O Amazon Inspector ajuda a melhorar a segurança e a conformidade dos aplicativos executando avaliações de segurança automatizadas. Ele verifica os aplicativos quanto a vulnerabilidades de segurança e desvios das práticas recomendadas de segurança, como acesso aberto a instâncias do Amazon EC2 e instalações de versões de software vulneráveis. 
-
+https://aws.amazon.com/pt/inspector/
 
 ## Amazon GuardDuty
 O Amazon GuardDuty é um serviço que fornece detecção inteligente de ameaças para sua infraestrutura e seus recursos AWS. Ele identifica ameaças monitorando continuamente a atividade da rede e o comportamento da conta no seu ambiente AWS.
 
-
+https://aws.amazon.com/pt/guardduty/
 <div id="Monitoramento"></div>
 
 # 7. Monitoramento e análise 👨‍💻 📟
@@ -450,32 +511,41 @@ O Amazon GuardDuty é um serviço que fornece detecção inteligente de ameaças
 * Criar o seu Dasboard(painel) pernonalizado com os serviços e métricas que deseja acompanhar
 * Configurar alarmes visuais do ambiente
  
+ https://aws.amazon.com/pt/cloudwatch/
+
 ## AWS CloudTrail
 O AWS CloudTrail é um serviço que possibilita governança, conformidade, auditoria operacional e auditoria riscos em sua conta AWS.
+
+https://aws.amazon.com/pt/cloudtrail/
 
 ## CloudTrail Insights
 Esse recurso opcional permite que o CloudTrail detecte automaticamente atividades de API incomuns em sua conta AWS. 
 
-
+https://aws.amazon.com/pt/about-aws/whats-new/2019/11/aws-cloudtrail-announces-cloudtrail-insights/
 ## AWS Config
 é um serviço que permite acessar, auditar e avaliar as confoguraçoes dos recvursos da aws.
-
+https://aws.amazon.com/pt/config/
 ## AWS Trusted Advisor
 é um serviço web que inspeciona seu ambiente AWS e faz recomendações em tempo real de acordo com as práticas recomendadas da AWS.
 
  faz recomendações de práticas recomendadas em cinco categorias: otimização de custos, desempenho, segurança, tolerância a falhas e limites de serviço.
-
+https://aws.amazon.com/pt/premiumsupport/technology/trusted-advisor/
 <div id="preco"></div>
 
 # 8. Definição de preços e suporte 💸 💵 ⏲
 
 ## AWS Cost Explorer
 aws cost explorer é uma interfaace para visualizar, entender e gerenciar os custos e o uso da AWS ao longo do tempo
+https://aws.amazon.com/pt/aws-cost-management/aws-cost-explorer/
 ## AWS Marktplace
 O AWS Marketplace é um catálogo digital com milhares de ofertas de fornecedores independentes de software. Você pode usar o AWS Marketplace para encontrar, testar e comprar software que pode ser executado na AWS. 
+https://aws.amazon.com/marketplace
+
 ## AWS Budgets
 é para definir orçamentos personalizados e enbviar aletergas quadndo o o uso ou os custos excede o valor orçado
 No AWS Budgets, você pode criar orçamentos para planejar o uso do serviço, os custos de serviço e as reservas de instâncias.
+
+https://aws.amazon.com/pt/aws-cost-management/aws-budgets/
 
 <div id="migracao"></div>
 
