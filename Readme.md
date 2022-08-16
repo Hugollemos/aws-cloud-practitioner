@@ -1,0 +1,2 @@
+Minhas anotações tiradas do curso da **[Escola da nuvem](https://www.escoladanuvem.org)**  e da **[AWS Skill Builder: AWS Cloud Practitioner Essentials
+](https://explore.skillbuilder.aws/learn/signin)** para estudo referente ao exame da **[AWS Certified Cloud Practitioner](https://aws.amazon.com/pt/certification/certified-cloud-practitioner).** 
