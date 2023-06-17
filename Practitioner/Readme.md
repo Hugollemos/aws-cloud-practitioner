@@ -2,9 +2,6 @@
 
 # Certificação AWS Cloud Practitioner
 
-Minhas anotações tiradas do curso da **[Escola da nuvem](https://www.escoladanuvem.org)**  e da **[AWS Skill Builder: AWS Cloud Practitioner Essentials
-](https://explore.skillbuilder.aws/learn/signin)** para estudo referente ao exame da **[AWS Certified Cloud Practitioner](https://aws.amazon.com/pt/certification/certified-cloud-practitioner).** 
-
 <div id="assunto"></div>
 
 * [Assuntos](#assunto)
@@ -56,18 +53,18 @@ TOTAL | 100%
 "Pare de gastar recursos financeiros na manutenção da infraestrutura e tenha mais foco nos clientes."
 
 # Stopguessing capacity
-"Elimina a adivinhação de quanto a infraestrutura precisa, Com a computação em nuvem, você não precisa prever a capacidade de infraestrutura necessária antes de implantar um aplicativo.
+"Elimina a adivinhação de quanto a infraestrutura precisa, Com a computação em nuvem, você não precisa prever a capacidade de infraestrutura necessária antes de implantar um aplicativo."
 
-# variable expenses
+# Variable expenses
 "Ao adotar uma abordagem de computação em nuvem com o benefício de **despesas variáveis**, as empresas podem implementar soluções inovadoras enquanto economizam custos."
 
-# economies of scale
+# Economies of scale
 "O uso da computação em nuvem permite obter um custo variável inferior ao que você consegue por conta própria."
 
-# increase speed and agility
+# Increase speed and agility
 "Mais facilidade na hora de usar o serviço em poucos cliques. "
 
-# go global
+# Go global
 "Facilidade em disponibilizar o serviço em varias partes no globo."
 
 **[REFERENCIA](https://docs.aws.amazon.com/pt_br/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html
@@ -77,13 +74,13 @@ TOTAL | 100%
 # 1.2 Tipos de clouds
 ## Temos 3 tipos de clouds!
 
-* IAAS
-Infrastructure as a service (infraestrutura como serviço). Exemplo AWS EC2 a onde usamos o hardware da aws para montar servidores virtuais, utilizando rede, armazenamento e processamento. 
+* IAAS:
+Infrastructure as a service (infraestrutura como serviço). <br> Ex: Utilizamos o serviço das máquinas ec2 para montar servidores virtuais, utilizando rede, armazenamento e processamento. A aws oferece o hardware das máquinas e todo o maquinario por de trás do dashboard, enquanto o usúario configura o que deseja.
 
-* PAAS
+* PAAS:
 plataform as a service (plataforma como serviço), Não é preciso gerenciar a infraestrutura subjacente (geralmente hardware e sistemas operacionais), e você pode focar na implantação e no gerenciamento de suas aplicações.
 
-* SAAS
+* SAAS:
 SaaS – software as a service (software como serviço). Quando utilizamos o software: Amazon CloudFront, Amazon Detective,Amazon DocumentDB etc.
 
 
@@ -98,7 +95,7 @@ SaaS – software as a service (software como serviço). Quando utilizamos o sof
 
 # 2. COMPUTAÇÃO NA NUVEM 🖥 ☁️
 
-"O Amazon EC2 é um serviço que disponibiliza uma capacidade computacional segura, representado por uma instancia redimensionável na Nuvem."
+"O Amazon EC2 é um serviço que disponibiliza uma capacidade computacional segura, representado por uma instância redimensionável na Nuvem."
 
 ### CARACTERÍSTICAS
 * amazon EC2 Elastic Compute Cloud
@@ -113,7 +110,7 @@ SaaS – software as a service (software como serviço). Quando utilizamos o sof
 
 **[REFERENCIA](https://aws.amazon.com/pt/ec2/
 )**
-# Tipos de instancia
+# Tipos de instâncias
 
 FAMÍLIA | OTIMIZADO | IDEAL PARA
 ---------|----------|---------|
@@ -129,14 +126,17 @@ FAMÍLIA | OTIMIZADO | IDEAL PARA
 
 Launch | Específico | Preço | Útil 
 ---------|----------|---------|---------
-SOB DEMANDA | Cobrança sobre o que usar (por hora OU por segundo). Sem compromisso de uso (anos). Sem pagamento adiantado. Pode aumentar ou diminuir a capacidade computacional. | Alto custo se usado por longo prazo | Cargas de trabalho de curtoprazo, validar hipóteses, com pico de utilização previsível, testar e experimentar um ambiente.
-INSTANCIAS RESERVADAS | Aplicações que exigem capacidade reservada comprometimento de uso da instancia por um período de 01 ou 03 anos. | possui pagamento adiantado. Até 75% desconto comparação instancias por demanda | Ambiente de produção que foi testado e não será modificado, aplicação que precisa ter estado constante; Excelente para banco de dados.
-HOST DEDICADO | Hardware dedicado. Servidor físico EC2 exclusivo para você. Cumprir requisitos de conformidade. Visibilidade de soquetes, núcleos. IDs de host. Comprometimento por um período de 03 anos. Pode ser comprado sob demanda de horas | se optar por reserva, até 70% desconto em comparação com instancias por demanda | Vincular licenças de software como Windows Server, AWS Server e SUSE Linux Enterprise Server.
+SOB DEMANDA/On-Demand Instances | Cobrança sobre o que usar (por hora OU por segundo). Sem compromisso de uso (anos). Sem pagamento adiantado. Pode aumentar ou diminuir a capacidade computacional. | Alto custo se usado por longo prazo | Cargas de trabalho de curtoprazo, validar hipóteses, com pico de utilização previsível, testar e experimentar um ambiente.
+INSTANCIAS RESERVADAS | Aplicações que exigem capacidade reservada comprometimento de uso da instância por um período de 01 ou 03 anos. | possui pagamento integral/parcial e adiantado. Até 75% desconto comparação instancias por demanda | Ambiente de produção que foi testado e não será modificado, aplicação que precisa ter estado constante; Excelente para banco de dados.
+HOST DEDICADO | Hardware dedicado. Servidor físico EC2 exclusivo para cumprir requisitos de conformidade. Visibilidade de soquetes, núcleos. IDs de host. Comprometimento por um período de 03 anos. Pode ser comprado sob demanda de horas | se optar por reservar, até 70% desconto em comparação com instâncias por demanda | Vincular licenças de software como Windows Server, AWS Server e SUSE Linux Enterprise Server.
 INSTANCIA DEDICADA | Hardware dedicado Pode compartilhar o hardware com outras instancias, na mesma conta. Não tem controle sobre o posicionamento da instancia (você só pode movimentar hardware se interromper e reiniciar); Comprometimento por um período de 03 anos
 INSTANCIAS SPOT | são terminadas quando o preço do spot, é maior do que o preço que você estabeleceu para pagar. terminate =(preço spot da AWS > seu preço) | Até 90% desconto comparação instancias por demanda | Quando você tem urgência de grande capacidade computacional, workloads que podem parar e serem iniciados novamente, trabalhos em iote, análise de dados, processamento de imagens.
 
+**[REFERENCIA](https://docs.aws.amazon.com/pt_br/AWSEC2/latest/UserGuide/instance-purchasing-options.html)**
+
 ## Savings Plans do Amazon EC2
 permite reduzir os custos de computação ao haver o compromisso com uma quantidade consistente de uso de computação por um período de um ou três anos. Esse compromisso resulta em economias de até 72% em relação aos custos de instâncias sob demanda.
+**[REFERENCIA](https://aws.amazon.com/pt/savingsplans/)**
 <hr>
 
 ## Amazon EC2 Auto Scaling
