@@ -110,7 +110,7 @@ SaaS – software as a service (software como serviço). Quando utilizamos o sof
 
 **[REFERENCIA](https://aws.amazon.com/pt/ec2/
 )**
-# Tipos de instâncias
+# 2.1 Tipos de instâncias
 
 FAMÍLIA | OTIMIZADO | IDEAL PARA
 ---------|----------|---------|
@@ -122,24 +122,24 @@ FAMÍLIA | OTIMIZADO | IDEAL PARA
 
 **[REFERENCIA](https://aws.amazon.com/pt/ec2/instance-types/)**
 
-## ✨ Amazon EC2 Launch Types
+## 2.3 ✨ Amazon EC2 Launch Types
 
 Launch | Específico | Preço | Útil 
 ---------|----------|---------|---------
 SOB DEMANDA/On-Demand Instances | Cobrança sobre o que usar (por hora OU por segundo). Sem compromisso de uso (anos). Sem pagamento adiantado. Pode aumentar ou diminuir a capacidade computacional. | Alto custo se usado por longo prazo | Cargas de trabalho de curtoprazo, validar hipóteses, com pico de utilização previsível, testar e experimentar um ambiente.
-INSTANCIAS RESERVADAS | Aplicações que exigem capacidade reservada comprometimento de uso da instância por um período de 01 ou 03 anos. | possui pagamento integral/parcial e adiantado. Até 75% desconto comparação instancias por demanda | Ambiente de produção que foi testado e não será modificado, aplicação que precisa ter estado constante; Excelente para banco de dados.
+INSTÃNCIAS RESERVADAS | Aplicações que exigem capacidade reservada comprometimento de uso da instância por um período de 01 ou 03 anos. | possui pagamento integral/parcial e adiantado. Até 75% desconto comparação instâncias por demanda | Ambiente de produção que foi testado e não será modificado, aplicação que precisa ter estado constante; Excelente para banco de dados.
 HOST DEDICADO | Hardware dedicado. Servidor físico EC2 exclusivo para cumprir requisitos de conformidade. Visibilidade de soquetes, núcleos. IDs de host. Comprometimento por um período de 03 anos. Pode ser comprado sob demanda de horas | se optar por reservar, até 70% desconto em comparação com instâncias por demanda | Vincular licenças de software como Windows Server, AWS Server e SUSE Linux Enterprise Server.
-INSTANCIA DEDICADA | Hardware dedicado Pode compartilhar o hardware com outras instancias, na mesma conta. Não tem controle sobre o posicionamento da instancia (você só pode movimentar hardware se interromper e reiniciar); Comprometimento por um período de 03 anos
-INSTANCIAS SPOT | são terminadas quando o preço do spot, é maior do que o preço que você estabeleceu para pagar. terminate =(preço spot da AWS > seu preço) | Até 90% desconto comparação instancias por demanda | Quando você tem urgência de grande capacidade computacional, workloads que podem parar e serem iniciados novamente, trabalhos em iote, análise de dados, processamento de imagens.
+INSTANCIA DEDICADA | Hardware dedicado Pode compartilhar o hardware com outras instãncias, na mesma conta. Não tem controle sobre o posicionamento da instancia (você só pode movimentar hardware se interromper e reiniciar); Comprometimento por um período de 03 anos
+INSTÃNCIAS SPOT | são terminadas quando o preço do spot, é maior do que o preço que você estabeleceu para pagar. terminate =(preço spot da AWS > seu preço) | Até 90% desconto comparação instãncias por demanda | Quando você tem urgência de grande capacidade computacional, workloads que podem parar e serem iniciados novamente, trabalhos em iote, análise de dados, processamento de imagens.
 
 **[REFERENCIA](https://docs.aws.amazon.com/pt_br/AWSEC2/latest/UserGuide/instance-purchasing-options.html)**
 
-## Savings Plans do Amazon EC2
+## 2.4 Savings Plans do Amazon EC2
 permite reduzir os custos de computação ao haver o compromisso com uma quantidade consistente de uso de computação por um período de um ou três anos. Esse compromisso resulta em economias de até 72% em relação aos custos de instâncias sob demanda.
 **[REFERENCIA](https://aws.amazon.com/pt/savingsplans/)**
 <hr>
 
-## Amazon EC2 Auto Scaling
+## 2.5 Amazon EC2 Auto Scaling
 
 "O Amazon EC2 Auto Scaling permite que você adicione ou remova automaticamente instâncias do Amazon EC2 em resposta à alteração da demanda do aplicativo."
 
@@ -154,22 +154,22 @@ permite reduzir os custos de computação ao haver o compromisso com uma quantid
 
 **[REFERENCIA](https://aws.amazon.com/pt/ec2/autoscaling/)**
 ## Escalabilidade
-almenta os recursos computacionais como: RAM,CPU etc.
+aumentar os recursos computacionais como: RAM,CPU etc.
 
 ## Elasticidade 
-almenta os números de intancias(máquinas)
+aumentar os números de intancias(máquinas)
 
 Serviços Elásticos: Amazon EC2, Elastic Load Balacing, AWS Elastic Beanstalk, Amazon Elastic Cache
 
 OBS:
-* Definir uma quantidade mínima, desejável e máxima de instancias
+* Definir uma quantidade mínima, desejável e máxima de instãncias
 * Scale out (aumentar com as demandas) e Scale in (diminuir quando a demanda deixa de ocorrer)
-* Auto Scaling Group é gratuito, voce paga apenas pelas instancias que estao sendo executadas
+* Auto Scaling Group é gratuito, voce paga apenas pelas instãncias que estão sendo executadas.
 
 <hr>
 
-## Elastic Load Balancing
-"O Elastic Load Balancing é o serviço AWS que distribui automaticamente o tráfego de entrada de aplicativos entre vários recursos, como instâncias do Amazon EC2, conteineres, endereços IP e Funções Lambda"
+## 2.6 Elastic Load Balancing
+"O Elastic Load Balancing é o serviço AWS que distribui automaticamente o tráfego de entrada de aplicativos entre vários recursos, como instâncias do Amazon EC2, containers, endereços IP e Funções Lambda"
 
 - TIPOS DE LOAD BALANCER
   - Application Load Balancer,
@@ -202,10 +202,10 @@ REcomendável | Amazon EC2, Conteineres, Funções Lambda, Endereções IP | Ama
 Permite que voce execute códigos sem provisionar ou gerenciar servidores, pagando apenas pelo número de solicitações e pelo tempo de computação que voce utilizar."
 
 OBS: 
-* serviço serveless e gerenciado pela AWS
+* serviço serveless é gerenciado pela AWS
 * AWS Lambda dimensiona suas aplicações 
-* voce pode otimizar o tempo de execuçao e o tamanho de memoria
-* cobrança por númeo de solicitacoes de duas funcoes e pela duracao por cada milissegundo que leva para que seu codigo seja executado
+* voce pode otimizar o tempo de execução e o tamanho de memória
+* cobrança por númeo de request de duas funções e pela duração por cada milissegundos que leva para que seu código seja executado
 
 **[REFERENCIA](https://aws.amazon.com/pt/lambda/)**
 
@@ -229,11 +229,11 @@ Com o AWS Fargate, você não precisa provisionar ou gerenciar servidores."
 
 # 3. INFRAESTRUTURA GLOBAL E CONFIABILIDADE 🛰 🏭
 
-Uma região é a disponibilização de uma coleção de recursos AWS em uma localização geográfica, sendo ele composto por um conjunto de zonas de disponibilidade(um conjunto de data centers em uma localização geográfica.)
+* Uma região é a disponibilização de uma coleção de recursos AWS em uma localização geográfica, sendo ele composto por um conjunto de zonas de disponibilidade(um conjunto de data centers em uma localização geográfica.)
 
-ZONA DE DISPONIBILIDADE: Uma zona de disponibilidade é um conjunto de datacenters que estão na mesma REGIÃO, porém separados por uma distancia significativa, atuando de forma independente em caso de falha de uma zona.
+* ZONA DE DISPONIBILIDADE: Uma zona de disponibilidade é um conjunto de datacenters que estão na mesma REGIÃO, porém separados por uma distancia significativa, atuando de forma independente em caso de falha de uma zona.
 
-Pontos de presença, Edge locations ou local de borda é: uma infraestrutura de servidores, localizado próximo de uma ZD, que armazena os dados mais solicitados no cache, para entregar com menor latência uma requisição de consulta.
+* Pontos de presença, Edge locations ou local de borda é: uma infraestrutura de servidores, localizado próximo de uma ZD, que armazena os dados mais solicitados no cache, para entregar com menor latência uma requisição de consulta.
 
 OBS:
 são utilizados como cache de dados para distribuição de conteúdo.
@@ -393,7 +393,7 @@ OBS:
 
 | = |S3 Standard | S3 Intelligent Tiering |(S3 Standdar-IA) | S3 One Zone -IA | S3 Glacier | S3 Glacier Deep Archive
 ---------|----------|---------|---------|---------|---------|---------
-Bom para | Uso geral | Uso geral e movimentação automática | Menor frenquencia e idela para backup | Menor frenquencia, mas só uma ZD | Arquivar dados | Retenção longo prazo > 7 anos
+Bom para | Uso geral | Uso geral e movimentação automática | Menor frenquencia e ideal para backup | Menor frenquencia, mas só uma ZD | Arquivar dados | Retenção longo prazo > 7 anos
 Ciclo Vida | Zero | <=30 | >=30 | >=30 | >=90 | >=180
 durável | 99,999999999% | 99,999999999% | 99,999999999% | 99,999999999% | 99,999999999% | 99,999999999%
 Disponível | (11 9's) | (11 9's) | (11 9's) | (11 9's) | (11 9's) | (11 9's) | (11 9's)
@@ -401,42 +401,43 @@ Zona Dispo | >=3 | >=3 | >=3 | 1 | >=3 | >=3
 SLA | 99,9% | 99% | 99% | 99% | 99,9% | 99,9%
 Recuperação | Imediata | Imediata | Imediata | Imediata | Imediata | Imediata
 ---
-- S3 Standar
+
+## O S3 Standard fornece alta disponibilidade para objetos. Isso o torna uma boa escolha para diversos casos de uso, como sites, distribuição de conteúdo e análise de dados. O S3 Standard tem um custo mais alto do que outras categorias de armazenamento para dados acessados com pouca frequência e armazenamento de arquivamento.
+
+- S3 Standard
   - Projetado para dados acessados com frequência
   - Armazena dados em um mínimo de três Zonas de Disponibilidade
   - 99.999999999 de durabilidade
-
-O S3 Standard fornece alta disponibilidade para objetos. Isso o torna uma boa escolha para diversos casos de uso, como sites, distribuição de conteúdo e análise de dados. O S3 Standard tem um custo mais alto do que outras categorias de armazenamento para dados acessados com pouca frequência e armazenamento de arquivamento.
 ---
+
+## O S3 Standard-IA é ideal para dados acessados com pouca frequência, mas que precisam ter alta disponibilidade para quando necessário. O S3 Standard e o S3 Standard – IA armazenam dados em um mínimo de três Zonas de Disponibilidade. O S3 Standard – IA fornece o mesmo nível de disponibilidade do S3 Standard, mas com um preço de armazenamento mais baixo e um preço de recuperação mais alto.
+
 - Standard-Infrenquent Access (S3 Standdar-IA)
   - Ideal para dados com pouca frequência de acesso
   - Semelhante ao S3 Standard, mas com um preço de armazenamento mais baixo e um preço de recuperação mais alto
-
-O S3 Standard-IA é ideal para dados acessados com pouca frequência, mas que precisam ter alta disponibilidade para quando necessário. O S3 Standard e o S3 Standard – IA armazenam dados em um mínimo de três Zonas de Disponibilidade. O S3 Standard – IA fornece o mesmo nível de disponibilidade do S3 Standard, mas com um preço de armazenamento mais baixo e um preço de recuperação mais alto.
 --- 
-
 - One Zone-Infrequent Access (S3 One Zone - IA)
   - Armazena dados em uma única Zona de Disponibilidade
   - Tem um preço de armazenamento menor do que o S3 Standard – IA
 ---
+## Na categoria de armazenamento S3 Intelligent-Tiering, o Amazon S3 monitora os padrões de acesso dos objetos. Se você não acessou um objeto por 30 dias consecutivos, o Amazon S3 o move automaticamente para o nível de acesso pouco frequente S3 Standard – IA. Se você acessar um objeto no nível de acesso pouco frequente, o Amazon S3 o move automaticamente para o nível de acesso frequente S3 Standard.
 
 - Intelligent Tiering
   - Ideal para dados com padrões de acesso desconhecidos ou em alteração
   - Requer uma pequena taxa mensal de monitoramento e automação por objeto
 
-Na categoria de armazenamento S3 Intelligent-Tiering, o Amazon S3 monitora os padrões de acesso dos objetos. Se você não acessou um objeto por 30 dias consecutivos, o Amazon S3 o move automaticamente para o nível de acesso pouco frequente S3 Standard – IA. Se você acessar um objeto no nível de acesso pouco frequente, o Amazon S3 o move automaticamente para o nível de acesso frequente S3 Standard.
 ---
+## O S3 Glacier é uma categoria de armazenamento de baixo custo, ideal para o arquivamento de dados. Por exemplo, você pode usar essa categoria para armazenar registros de clientes arquivados ou arquivos de fotos e vídeos mais antigos.
+
 - Glacier
   - Armazenamento de baixo custo projetado para arquivamento de dados
   - Capaz de recuperar objetos em poucos minutos a horas
-
-O S3 Glacier é uma categoria de armazenamento de baixo custo, ideal para o arquivamento de dados. Por exemplo, você pode usar essa categoria para armazenar registros de clientes arquivados ou arquivos de fotos e vídeos mais antigos.
 ---
+## Ao decidir entre o Amazon S3 Glacier e o Amazon S3 Glacier Deep Archive, considere a prontidão com que você precisa recuperar objetos arquivados. É possível recuperar objetos armazenados na categoria de armazenamento S3 Glacier de alguns minutos a algumas horas. Em comparação, é possível recuperar objetos armazenados na categoria de armazenamento S3 Glacier Deep Archive em até 12 horas.
+
 - S3 Glacier Deep Archive
   - Categoria de armazenamento de objetos com menor custo, ideal para arquivamento
   - Capaz de recuperar objetos em 12 horas
-
-Ao decidir entre o Amazon S3 Glacier e o Amazon S3 Glacier Deep Archive, considere a prontidão com que você precisa recuperar objetos arquivados. É possível recuperar objetos armazenados na categoria de armazenamento S3 Glacier de alguns minutos a algumas horas. Em comparação, é possível recuperar objetos armazenados na categoria de armazenamento S3 Glacier Deep Archive em até 12 horas.
 ---
 
 **[REFERENCIA](https://aws.amazon.com/pt/s3/)**
@@ -573,7 +574,7 @@ Uma função do IAM é uma identidade que você pode assumir para obter acesso t
   - AWS Organizations é um serviço Global
   - Permite gerenciar múltiplas contas AWS
   - Uma conta principal (Master Account)
-  - APi disponível para criação de contas
+  - API disponível para criação de contas
   - Restrição das contas usando SCP (Service Control Police)
   - consolidar e gerenciar múltiplas contas AWS em um local central.
   - No AWS Organizations, você pode agrupar contas em unidades organizacionais (UO) para facilitar o gerenciamento de contas com requisitos de negócios ou segurança semelhantes.
@@ -618,7 +619,7 @@ OBS:
 - Outros ataques na camada 3 e camada 4
 
 ## AWS Shield Advanced
-"é um serviço pago que fornece diagnósticos detalhados de ataques e a capacidade de detectar e mitigar ataques elaborados de DDoS."
+"é um serviço pago que fornece diagnósticos detalhados de ataques e a capacidade de detectar e mitigar ataques elaborados de DDOS."
 
 OBS:
 - Serviço pago
@@ -637,7 +638,7 @@ OBS:
 **[REFERENCIA](https://aws.amazon.com/pt/inspector/)**
 
 ## Amazon GuardDuty
-"O Amazon GuardDuty é um serviço que fornece **detecção** inteligente de ameaças para sua infraestrutura e seus recursos AWS. Ele identifica ameaças monitorando continuamente a atividade da rede e o comportamento da conta no seu ambiente AWS.
+"O Amazon GuardDuty é um serviço que fornece **detecção** inteligente de ameaças para sua infraestrutura e seus recursos AWS. Ele identifica ameaças monitorando continuamente a atividade da rede e o comportamento da conta no seu ambiente AWS.<br>
 **[REFERENCIA](https://aws.amazon.com/pt/guardduty/)**
 <div id="Monitoramento"></div>
 
@@ -654,9 +655,8 @@ OBS:
 __Coletar -> Monitorar -> Atuar -> Analisar__
 ---
 - Coletar 
-
   - Coleta Métricas e Logs
-  - Recursos e Serviçõs na Nuvem e on-premises
+  - Recursos e Serviços na Nuvem e on-premises
   - Métrica padrão 5 minutos
   - Métrica detalhada ($$$) por minuto
 - Monitorar
@@ -668,7 +668,7 @@ __Coletar -> Monitorar -> Atuar -> Analisar__
   - Criar alarmes para atuar como gatilho, baseado nas métricas de uso e desempenho
   - Opções do gatilho: amostra, %, valor máximo, mínimo, etc.
   ALARM ACTION:
-  - Auto Scaling Group: Aumentar ou diminuir o número de instancias no amazon EC2
+  - Auto Scaling Group: Aumentar ou diminuir o número de instãncias no amazon EC2
   - Amazon SNS: Enviar notificações para um SNS Topic, para que as assinantes recebam um e-mail.
 - Analisar
   - Analisar em tempo real o seu ambiente, em segundos ou posterior com até 15 meses de armazenamento dos logs
@@ -740,7 +740,7 @@ Esse recurso opcional permite que o CloudTrail detecte automaticamente atividade
 **[REFERENCIA](https://calculator.aws/#/)**
 
 ## AWS Cost Explorer
-"aws cost explorer é uma interfaace para visualizar, entender e gerenciar os custos e o uso da AWS ao longo do tempo"
+"aws cost explorer é uma interface para visualizar, entender e gerenciar os custos e o uso da AWS ao longo do tempo"
 - OBS
   - AWS Const Explorer: é uma interface para visualizar, entender e gerenciar os custos e o uso da AWS ao longo do tempo
   - AWS Budgets é para definir orçamentos personalizados e enviar alertas quando o uso ou os custos excede o valor orçado
