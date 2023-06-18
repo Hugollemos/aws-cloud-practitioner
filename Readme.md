@@ -3,4 +3,4 @@
 **[Escola da nuvem](https://www.escoladanuvem.org)**  
 **[AWS Skill Builder: AWS Cloud Practitioner Essentials](https://explore.skillbuilder.aws/learn)** 
 
-_Utima atualização_: 16/06/2023
+_Utima atualização_: 18/06/2023
