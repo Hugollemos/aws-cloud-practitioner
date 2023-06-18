@@ -1,7 +1,6 @@
 <div id="topo"></div>
 
 # Certificação AWS Cloud Practitioner
-
 <div id="assunto"></div>
 
 * [Assuntos](#assunto)
